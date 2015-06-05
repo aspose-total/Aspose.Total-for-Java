@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Aspose_Maven_for_Eclipse
+Bundle-SymbolicName: com.aspose.eclipse.maven;singleton:=true
+Bundle-Version: 1.0
+Bundle-Activator: com.aspose.eclipse.maven.Activator
+Require-Bundle: org.eclipse.m2e.core.ui,
+ org.eclipse.m2e.core,
+ org.eclipse.core.resources,
+ org.eclipse.ui.ide;bundle-version="3.10.1",
+ org.eclipse.core.runtime,
+ org.eclipse.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Aspose Pty Ltd
+Import-Package: org.apache.maven.model

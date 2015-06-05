@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="com.aspose.eclipse.maven.wizard"
+            name="Aspose Maven">
+      </category>
+      <wizard
+            category="com.aspose.eclipse.maven.wizard"
+            class="com.aspose.eclipse.maven.wizard.AsposeMavenNewProjectWizard"
+            finalPerspective="com.eclipse.ecplugin.customperspective"
+            helpHref="aspose.com"
+            icon="icons/aspose.png"
+            id="com.aspose.eclipse.maven.wizard.new.project"
+            name="Aspose Maven Project"
+            project="true">
+             <description>Aspose Maven Project creates a new Eclipse maven based project by fetching and referencing maven dependencies of Aspose.Total for Java APIs.</description>
+      </wizard>
+   </extension>
+</plugin>

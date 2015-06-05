@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="" xmlns:wmh="http://www.wmhelp.com/2003/eGenerator" elementFormDefault="unqualified" targetNamespace="">
+  <xs:element name="Data">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Folders" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Examples" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Folders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Folder" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Folder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Title"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="FolderName"/>
+        <xs:element ref="Order"/>
+        <xs:element ref="Examples" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="Folders" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Examples">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Example" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Example">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Title"/>
+        <xs:element ref="Description"/>
+        <xs:element ref="FolderName"/>
+        <xs:element ref="Order"/>
+        <xs:element ref="DocLink" minOccurs="0"/>
+        <xs:element ref="InputFiles" minOccurs="0"/>
+        <xs:element ref="OutputFiles" minOccurs="0"/>
+        <xs:element ref="Type"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DocLink">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DisplayName"/>
+        <xs:element ref="Url"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InputFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataFile"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OutputFiles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="DataFile"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DataFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Path" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Title" type="xs:string"/>
+  <xs:element name="Description" type="xs:string"/>
+  <xs:element name="FolderName" type="xs:string"/>
+  <xs:element name="Order" type="xs:string"/>
+  <xs:element name="Type" type="xs:string"/>
+  <xs:element name="DisplayName" type="xs:string"/>
+  <xs:element name="Url" type="xs:string"/>
+  <xs:element name="Path" type="xs:string"/>
+</xs:schema>

@@ -1,0 +1,69 @@
+<!--
+  ~ Copyright (c) Aspose 2002-2014. All Rights Reserved.
+  ~
+  ~ LICENSE: This program is free software; you can redistribute it
+  ~ and/or modify it under the terms of the GNU General Public License
+  ~ as published by the Free Software Foundation; either version 3
+  ~ of the License, or (at your option) any later version.
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program. If not,
+  ~ see http://opensource.org/licenses/gpl-3.0.html
+  ~
+  ~ @author Adeel Ilyas <adeel.ilyas@aspose.com>
+  -->
+<idea-plugin version="2">
+  <id>com.aspose.intellijplugin.id</id>
+  <name>Aspose Project Wizard</name>
+  <version>1.3</version>
+  <vendor email="marketplace@aspose.com" url="http://www.aspose.com">Aspose Pty Ltd.</vendor>
+
+
+  <description><![CDATA[
+     <b>Aspose Application</b> creates a new IntelliJ project by downloading and referencing libraries of <b>Aspose Java APIs</b>.
+        <br/><br/>
+        <b>Aspose Project Wizard</b> allows you to select API(s) from Aspose Java product lines like Aspose.Cells for Java and Aspose.Words for Java etc.<br/><br/>
+        Once specific API is selected, its reference is automatically downloaded from Aspose servers and referenced in classpath of the project.<br/><br/>
+        Once project is created, user can then add Aspose samples using <b>Aspose Example</b>.<br/><br/>
+        Available samples are displayed in tree format from where user can select one, selected sample will be added to current project including source files and required data files.<br/><br/>
+        New created project is ready to debug/evaluate, all references are automatically added.
+        <br/><br/>
+        With this plugin, you never need to check for new releases of Aspose APIs. Whenever a new release is published, you will be notified while creating new project and you can also check release notes to save your time.
+    ]]></description>
+
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+  <idea-version since-build="131"/>
+
+  <!-- please see http://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+
+
+    <extensions defaultExtensionNs="com.intellij">
+        <moduleBuilder builderClass="com.aspose.wizards.AsposeModuleBuilder"/>
+    </extensions>
+
+
+
+  <application-components>
+    <!-- Add your application components here -->
+  </application-components>
+
+  <project-components>
+    <!-- Add your project components here -->
+  </project-components>
+
+  <actions>
+      <action id="aspose.example" class="com.aspose.examples.AsposeExampleAction" text="Aspose Example" icon="/resources/asposeSmall.png"
+              description="Aspose Examples allow you to add Aspose samples. Available samples are displayed in tree format from where you can select one. Selected sample will be added to current project including source files and required data files.">
+          <add-to-group group-id="NewGroup" anchor="first"/>
+      </action>
+  </actions>
+
+</idea-plugin>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="AsposeMavenWizardUpdateSite" url="http://apps.aspose.com/marketplace/maven">
+      Aspose Maven for Eclipse IDE plugin enables Java developers to work with various binary file formats by using Aspose Java APIs right in the maven based projects.
+
+This plugin comes with Aspose Maven Project Wizard which creates Aspose maven based project by selecting Aspose Java APIs on the wizard steps (like Aspose.Words, Aspose.Pdf or Aspose.Cells) and add those selected Aspose API&apos;s maven dependencies into newly created maven project&apos;s pom.xml.
+
+The creating Maven project will always contain the selected APIs latest version maven dependencies from Aspose Cloud Maven Repository.
+   </description>
+   <feature url="features/com.aspose.eclipse.maven.projectwizard.feature_1.0.0.jar" id="com.aspose.eclipse.maven.projectwizard.feature" version="1.0">
+      <category name="aspose_maven"/>
+   </feature>
+   <category-def name="aspose_maven" label="Aspose Maven">
+      <description>
+         Aspose Maven refers to the Aspose Java APIs maven artifacts provided by Aspose Cloud Maven Repository.
+      </description>
+   </category-def>
+</site>

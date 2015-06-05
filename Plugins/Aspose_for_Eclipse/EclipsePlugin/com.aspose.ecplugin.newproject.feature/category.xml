@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.aspose.ecplugin.newproject.feature_1.1.0.jar" id="com.aspose.ecplugin.newproject.feature" version="1.1.0">
+      <category name="aspose_projects"/>
+   </feature>
+   <category-def name="aspose_projects" label="Aspose">
+      <description>
+         www.aspose.com
+      </description>
+   </category-def>
+</site>
