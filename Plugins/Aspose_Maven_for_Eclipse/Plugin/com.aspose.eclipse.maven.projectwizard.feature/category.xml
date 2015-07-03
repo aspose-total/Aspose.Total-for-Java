@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/com.aspose.eclipse.maven_1.0.0.jar" id="com.aspose.eclipse.maven" version="1.0">
+      <category name="aspose_maven"/>
+   </feature>
+   <category-def name="aspose_maven" label="Aspose Maven">
+      <description>
+         Aspose Maven refers to the Aspose Java APIs maven artifacts provided by Aspose Cloud Maven Repository.
+      </description>
+   </category-def>
+</site>
