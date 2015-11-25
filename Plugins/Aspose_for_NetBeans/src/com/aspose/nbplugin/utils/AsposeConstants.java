@@ -35,6 +35,28 @@ public class AsposeConstants {
     public static final String APACHE_POI = "APACHE_POI";
     // adeel.ilyas@aspose.com
     
+    public static final String GIT_EX_URL_WORDS    = "https://github.com/asposewords/Aspose_Words_Java.git";
+    public static final String GIT_EX_URL_CELLS    = "https://github.com/asposecells/Aspose_Cells_Java.git";
+    public static final String GIT_EX_URL_PDF      = "https://github.com/asposepdf/Aspose_Pdf_Java.git";
+    public static final String GIT_EX_URL_SLIDES   = "https://github.com/asposeslides/Aspose_Slides_Java.git";
+    public static final String GIT_EX_URL_EMAIL    = "https://github.com/asposeemail/Aspose_Email_Java.git";
+    public static final String GIT_EX_URL_BARCODE  = "https://github.com/asposebarcode/Aspose_BarCode_Java.git";
+    public static final String GIT_EX_URL_IMAGING  = "https://github.com/asposeimaging/Aspose_Imaging_Java.git";
+    public static final String GIT_EX_URL_TASKS    = "https://github.com/asposetasks/Aspose_Tasks_Java.git";
+    public static final String GIT_EX_URL_OCR      = "https://github.com/asposeocr/Aspose_OCR_Java.git";
+    public static final String GIT_EX_URL_DIAGRAM  = "https://github.com/asposediagram/Aspose_Diagram_Java.git";
+
+    public static final String GIT_ID_ASPOSE_WORDS     = "42920c7271138ff7bc60f9da27218d9a0bb359c0";
+    public static final String GIT_ID_ASPOSE_CELLS     = "a40801141394df7a538507b72f4334a26ea8a975";
+    public static final String GIT_ID_ASPOSE_PDF       = "23e55f91141ffac84922f93382360eb994da99b3";
+    public static final String GIT_ID_ASPOSE_SLIDES    = "9b2469e8bf5422d236dc3bc70fd52d1056700da1";
+    public static final String GIT_ID_ASPOSE_EMAIL     = "06f2add49b99f8614980bf3fea825d6c53fecfd8";
+    public static final String GIT_ID_ASPOSE_BARCODE   = "cc4b605b1ade30ccdb2c8c87503094b20b38a88e";
+    public static final String GIT_ID_ASPOSE_IMAGING   = "216790129c2e297a3bb78e679bf541764efa1b0e";
+    public static final String GIT_ID_ASPOSE_TASKS     = "7b3a942a1ce6e4583a9adcbb1fae0d7940186ad9";
+    public static final String GIT_ID_ASPOSE_OCR       = "3b0e47cc23c60ea790b583d2fd7f550bf6c033f0";
+    public static final String GIT_ID_ASPOSE_DIAGRAM   = "bce6992a16efe4522e08ab59f92f3681e8f8b651";
+    
     public static final String WEBSERVICE_ENDPOINT = "http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx";
 
     //Project 

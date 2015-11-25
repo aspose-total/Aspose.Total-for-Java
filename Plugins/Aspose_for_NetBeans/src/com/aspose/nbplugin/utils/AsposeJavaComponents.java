@@ -23,9 +23,9 @@ public class AsposeJavaComponents {
             //ASPOSE_CELLS
             AsposeJavaComponent asposeCells = new AsposeJavaComponent();
             asposeCells.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.cells.aspx");
-            asposeCells.set_downloadFileName("aspose-cells.zip");
+            asposeCells.get_downloadFileName();
             asposeCells.set_name(AsposeConstants.ASPOSE_CELLS);
-            asposeCells.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Cells_Java.git");
+            asposeCells.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_CELLS);
 
             // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
             asposeCells.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeCells));
@@ -36,9 +36,9 @@ public class AsposeJavaComponents {
             //ASPOSE_WORDS
             AsposeJavaComponent asposeWords = new AsposeJavaComponent();
             asposeWords.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.words.aspx");
-            asposeWords.set_downloadFileName("aspose-words.zip");
+            asposeWords.get_downloadFileName();
             asposeWords.set_name(AsposeConstants.ASPOSE_WORDS);
-            asposeWords.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Words_Java.git");
+            asposeWords.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_WORDS);
 
             // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
             asposeWords.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeWords));
@@ -51,7 +51,7 @@ public class AsposeJavaComponents {
             asposePDF.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.pdf.aspx");
             asposePDF.get_downloadFileName();
             asposePDF.set_name(AsposeConstants.ASPOSE_PDF);
-            asposePDF.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Pdf_Java.git");
+            asposePDF.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_PDF);
             list.put(AsposeConstants.ASPOSE_PDF, asposePDF);
 
             //ASPOSE_Slides
@@ -59,7 +59,7 @@ public class AsposeJavaComponents {
             asposeSlides.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.slides.aspx");
             asposeSlides.get_downloadFileName();
             asposeSlides.set_name(AsposeConstants.ASPOSE_SLIDES);
-            asposeSlides.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Slides_Java.git");
+            asposeSlides.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_SLIDES);
             
             // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
             asposeSlides.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeSlides));
@@ -79,7 +79,7 @@ public class AsposeJavaComponents {
             asposeBarcode.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.barcode.aspx");
             asposeBarcode.get_downloadFileName();
             asposeBarcode.set_name(AsposeConstants.ASPOSE_BARCODE);
-            asposeBarcode.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_BarCode_Java.git");
+            asposeBarcode.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_BARCODE);
             list.put(AsposeConstants.ASPOSE_BARCODE, asposeBarcode);
 
             //ASPOSE_MetaFiles
@@ -94,7 +94,7 @@ public class AsposeJavaComponents {
             asposeEmail.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.email.aspx");
             asposeEmail.get_downloadFileName();
             asposeEmail.set_name(AsposeConstants.ASPOSE_EMAIL);
-            asposeEmail.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Email_Java.git");
+            asposeEmail.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_EMAIL);
             
             // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
             asposeEmail.addOtherFrameworkExamples(OtherExamplesManager.getPOIExamples(asposeEmail));
@@ -114,7 +114,7 @@ public class AsposeJavaComponents {
             asposeImaging.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.imaging.aspx");
             asposeImaging.set_downloadFileName("");
             asposeImaging.set_name(AsposeConstants.ASPOSE_IMAGING);
-            asposeImaging.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Imaging_Java.git");
+            asposeImaging.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_IMAGING);
             list.put(AsposeConstants.ASPOSE_IMAGING, asposeImaging);
 
             //ASPOSE_TASKS
@@ -122,15 +122,15 @@ public class AsposeJavaComponents {
             asposeTasks.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.tasks.aspx");
             asposeTasks.set_downloadFileName("aspose.tasks.zip");
             asposeTasks.set_name(AsposeConstants.ASPOSE_TASKS);
-            asposeTasks.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Tasks_Java.git");
+            asposeTasks.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_TASKS);
             list.put(AsposeConstants.ASPOSE_TASKS, asposeTasks);
 
             //ASPOSE_DIAGRAM
             AsposeJavaComponent asposeDiagram = new AsposeJavaComponent();
             asposeDiagram.set_downloadUrl("http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.diagram.aspx");
-            asposeDiagram.set_downloadFileName("aspose.diagram.zip");
+            asposeDiagram.get_downloadFileName();
             asposeDiagram.set_name(AsposeConstants.ASPOSE_DIAGRAM);
-            asposeDiagram.set_remoteExamplesRepository("https://github.com/AdeelIlyas2014/Aspose_Diagram_Java.git");
+            asposeDiagram.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_DIAGRAM);
             list.put(AsposeConstants.ASPOSE_DIAGRAM, asposeDiagram);
 
             //compInitialized = true;
