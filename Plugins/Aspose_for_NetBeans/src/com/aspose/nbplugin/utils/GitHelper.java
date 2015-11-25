@@ -26,18 +26,42 @@ public class GitHelper {
             localRepo = new FileRepository(localPath + "/.git");
 
             Git git = new Git(localRepo);
-            {
-                AsposeConstants.println("Cloning Repository [" + remotePath + "]....");
-            }
+            AsposeConstants.println("Clone Repo [" + remotePath + "]....");
 
             // First try to clone the repository
-            try {
+            try 
+            {
+                AsposeConstants.println("Cloning...");
                 Git.cloneRepository().setURI(remotePath).setDirectory(new File(localPath)).call();
-            } catch (Exception ex) {
+                
+                String checkoutId = extractCheckoutId(remotePath);
+                
+                if ( checkoutId != null )
+                {
+                    AsposeConstants.println("Checkout with ID.");
+                    git.checkout().setName( checkoutId ).call();
+                    git.checkout().setCreateBranch( true ).setName( "new-branch" ).setStartPoint( checkoutId ).call();
+                }
+            } 
+            catch (Exception ex) 
+            {
                 // If clone fails, try to pull the changes
-                try {
+                try 
+                {
+                    AsposeConstants.println("Clone Failed. Now PULL");
                     git.pull().call();
-                } catch (Exception exPull) {
+                    
+                    String checkoutId = extractCheckoutId(remotePath);
+
+                    if ( checkoutId != null )
+                    {
+                        AsposeConstants.println("Checkout with ID.");
+                        git.checkout().setName( checkoutId ).call();
+                        git.checkout().setCreateBranch( true ).setName( "new-branch" ).setStartPoint( checkoutId ).call();
+                    }
+                } 
+                catch (Exception exPull) 
+                {
                     // Pull also failed. Throw this exception to caller
                     {
                         AsposeConstants.println("Pull also failed.");
@@ -45,11 +69,67 @@ public class GitHelper {
                     throw exPull; // throw it
                 }
             }
-        } catch (Exception ex) {
+        } 
+        catch (Exception ex) 
+        {
             throw new Exception("Could not download Repository from Github. Error: " + ex.getMessage());
         }
     }
 
+    private static String extractCheckoutId(String remotePath)
+    {
+        String checkoutId;
+        
+        switch (remotePath)
+        {
+            case AsposeConstants.GIT_EX_URL_WORDS:
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_WORDS;
+                break;
+                
+            case AsposeConstants.GIT_EX_URL_CELLS :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_CELLS;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_PDF :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_PDF;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_SLIDES :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_SLIDES;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_EMAIL :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_EMAIL;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_BARCODE :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_BARCODE;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_IMAGING :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_IMAGING;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_TASKS :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_TASKS;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_OCR :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_OCR;
+                break;
+
+            case AsposeConstants.GIT_EX_URL_DIAGRAM :
+                checkoutId = AsposeConstants.GIT_ID_ASPOSE_DIAGRAM;
+                break;
+                
+            default:
+                checkoutId = null;
+                break;
+        }
+        
+        return checkoutId;
+    }
+    
     /**
      *
      * @param folderPath

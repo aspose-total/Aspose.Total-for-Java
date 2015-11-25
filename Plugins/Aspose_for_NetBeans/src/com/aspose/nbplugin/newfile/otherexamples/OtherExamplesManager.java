@@ -67,22 +67,28 @@ public class OtherExamplesManager {
         OtherExamples _otherExamples = new OtherExamples();
         _otherExamples.addFrameWorkDependency(OtherExamplesManager.getPOIFrameWork());
 
-        if (component.get_name().equals(AsposeConstants.ASPOSE_WORDS)) {
+        if (component.get_name().equals(AsposeConstants.ASPOSE_WORDS)) 
+        {
             _otherExamples.setGitHubExamplesRepositoryLocation("https://github.com/asposemarketplace/Aspose_Words_for_Apache_POI.git");
             _otherExamples.setExampleName(AsposeConstants.ASPOSE_WORDS_APACHE_POI);
-        } else if (component.get_name().equals(AsposeConstants.ASPOSE_CELLS)) {
+        }
+        else if (component.get_name().equals(AsposeConstants.ASPOSE_CELLS)) 
+        {
             _otherExamples.setGitHubExamplesRepositoryLocation("https://github.com/asposemarketplace/Aspose_Cells_for_Apache_POI.git");
             _otherExamples.setExampleName(AsposeConstants.ASPOSE_CELLS_APACHE_POI);
-        } else if (component.get_name().equals(AsposeConstants.ASPOSE_SLIDES)) {
+        }
+        else if (component.get_name().equals(AsposeConstants.ASPOSE_SLIDES)) 
+        {
             _otherExamples.setGitHubExamplesRepositoryLocation("https://github.com/asposemarketplace/Aspose_Slides_for_Apache_POI.git");
             _otherExamples.setExampleName(AsposeConstants.ASPOSE_SLIDES_APACHE_POI);
-        } else if (component.get_name().equals(AsposeConstants.ASPOSE_EMAIL)) {
+        }
+        else if (component.get_name().equals(AsposeConstants.ASPOSE_EMAIL)) 
+        {
             _otherExamples.setGitHubExamplesRepositoryLocation("https://github.com/asposemarketplace/Aspose_Email_for_Apache_POI.git");
             _otherExamples.setExampleName(AsposeConstants.ASPOSE_EMAIL_APACHE_POI);
         }
 
         return _otherExamples;
-
     }
     private static final TasksExecutor tasksExecution = new TasksExecutor("Installing examples dependencies . . .");
 
