@@ -146,15 +146,15 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
             }
         }
 
-        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_CELLS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeCells().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_WORDS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeWords().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_CELLS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeCells().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_PDF, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposePdf().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_SLIDES, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeSlides().isSelected());
-        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_BARCODE, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeBarCode().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_EMAIL, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeEmail().isSelected());
-        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_OCR, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeOCR().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_BARCODE, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeBarCode().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_IMAGING, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeImaging().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_TASKS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeTasks().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_OCR, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeOCR().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_DIAGRAM, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeDiagram().isSelected());
     }
 
@@ -198,7 +198,6 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
         if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposePdf().isSelected())
         {
             AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_PDF).set_selected(true);
-            AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_PDF_KIT).set_selected(true);
         }
 
         if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeSlides().isSelected())
