@@ -74,8 +74,8 @@ public class AsposeComponentsManager {
                 if (productRelease == null) {
                     continue;
                 }
-                System.out.println("File Name: " + productRelease.getFileName());
-                System.out.println("Download Link: " + productRelease.getDownloadLink());
+                AsposeConstants.println("File Name: " + productRelease.getFileName());
+                AsposeConstants.println("Download Link: " + productRelease.getDownloadLink());
                 component.set_downloadUrl(productRelease.getDownloadLink());
                 component.set_downloadFileName(productRelease.getFileName());
                 component.set_changeLog(productRelease.getChangeLog());
@@ -449,6 +449,5 @@ public class AsposeComponentsManager {
                 is.close();
             }
         }
-    }
-    
+    }  
  }
