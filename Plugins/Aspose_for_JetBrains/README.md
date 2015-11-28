@@ -14,9 +14,10 @@ This plugin helps you to explore Aspose Java APIs inside your favorite IntelliJ 
 
 With this plugin, you never need to check for new releases of Aspose components. Whenever a new release is published, you will be notified while creating project and you can also check release notes to save your time. 
 
-# [How to use Aspose Project Wizard in IntelliJ IDEA ...](http://www.aspose.com/docs/display/totaljava/1.2.2+Using+Aspose.Total+Java+for+IntelliJ+IDEA)
+# [How to use Aspose Project Wizard in IntelliJ IDEA !](http://www.aspose.com/docs/display/totaljava/1.2.2+Using+Aspose.Total+Java+for+IntelliJ+IDEA)
+[Click here](http://www.aspose.com/docs/display/totaljava/1.2.2+Using+Aspose.Total+Java+for+IntelliJ+IDEA)
 
-## Plugin Documentation
+## [Plugin Documentation](http://www.aspose.com/docs/display/totaljava/1.+Aspose.Total+Java+for+IntelliJ+IDEA)
 
 For the complete documentation of this Intellij IDEA plugin, [please go through this wiki - click here](http://www.aspose.com/docs/display/totaljava/1.+Aspose.Total+Java+for+IntelliJ+IDEA)
 
