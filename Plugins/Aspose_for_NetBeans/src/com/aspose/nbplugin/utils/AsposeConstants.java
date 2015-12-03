@@ -72,6 +72,8 @@ public class AsposeConstants {
     public static final String ASPOSE_JAVA_COMP_LINK_OPN_CMD = "cmd /c start http://www.aspose.com/java/total-component.aspx";
     public static final String INTERNTE_CONNNECTIVITY_PING_URL = "java.sun.com";
     public static final String ASPOSE_COMPONENTS_FILE = "AsposeComponents.zip";
+    public static final String DIR_ASPOSE_HOME = "aspose";
+    public static final String DIR_EXAMPLES = "GitSampleRepos";
 
     //Messages UI text
     public static final String FIRST_PAGE_NAME = "Aspose Project Wizard";

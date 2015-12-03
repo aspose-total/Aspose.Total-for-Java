@@ -128,6 +128,6 @@ public class GitHelper {
      * @return
      */
     public static String getLocalRepositoryPath(AsposeJavaComponent component) {
-        return AsposeComponentsManager.getAsposeHomePath() + "GitSampleRepos" + File.separator + component.get_name();
+        return AsposeComponentsManager.getAsposeHomePath() + AsposeConstants.DIR_EXAMPLES + File.separator + component.get_name();
     }
 }

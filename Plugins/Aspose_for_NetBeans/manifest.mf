@@ -2,5 +2,5 @@ Manifest-Version: 1.0
 OpenIDE-Module: com.aspose.nbplugin
 OpenIDE-Module-Layer: com/aspose/nbplugin/layer.xml
 OpenIDE-Module-Localizing-Bundle: com/aspose/nbplugin/Bundle.properties
-OpenIDE-Module-Specification-Version: 2.4
+OpenIDE-Module-Specification-Version: 2.3.3
 
