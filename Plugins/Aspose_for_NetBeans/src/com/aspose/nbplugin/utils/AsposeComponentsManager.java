@@ -351,7 +351,7 @@ public class AsposeComponentsManager {
     public static String getLibaryDownloadPath() {
         String path = "";
         path = System.getProperty("user.home");
-        path = path + File.separator +"aspose"+File.separator+"nbplugin"+File.separator;
+        path = path + File.separator + AsposeConstants.DIR_ASPOSE_HOME + File.separator+"nbplugin"+File.separator;
         File confirmPath = new File(path);
         if (!confirmPath.exists()) {
             new File(path).mkdirs();
@@ -362,7 +362,7 @@ public class AsposeComponentsManager {
     public static String getAsposeHomePath() {
         String path = "";
         path = System.getProperty("user.home");
-        path = path + "/aspose/";
+        path = path + File.separator + AsposeConstants.DIR_ASPOSE_HOME + File.separator;
         return path;
     }
 

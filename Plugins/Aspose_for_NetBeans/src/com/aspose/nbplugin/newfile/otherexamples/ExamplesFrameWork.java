@@ -17,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.openide.awt.StatusDisplayer;
 import com.aspose.nbplugin.progressmonitor.AbstractTask;
+import com.aspose.nbplugin.utils.AsposeConstants;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -148,7 +149,7 @@ public class ExamplesFrameWork {
      * @return
      */
     public String getExamplesFrameWorkPath() {
-        return AsposeComponentsManager.getAsposeHomePath() + "GitSampleRepos" + File.separator + getFrameworkName() + File.separator;
+        return AsposeComponentsManager.getAsposeHomePath() + AsposeConstants.DIR_EXAMPLES + File.separator + getFrameworkName() + File.separator;
     }
 
     /**
