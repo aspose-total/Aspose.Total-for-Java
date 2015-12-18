@@ -77,28 +77,28 @@ public class AsposeConstants {
 	public static final String EXAMPLES_DOWNLOAD_REQUIRED = "Example needs to be downloaded, continue to download?";
 	public static final String EXAMPLES_INTERNET_CONNECTION_REQUIRED_MESSAGE ="Internet connectivity is required to download examples";
 	//advertise
-	public static final String ASPOSE_ALL_COMPONENTS_TEXT = "ﾻ Generate reports using mail merge"
-			+"\nﾻ Excel Reporting - Build dynamic Excel reports on the fly"
-			+"\nﾻ Create Excel dashboards, incorporating charts and pivot tables"
-			+"\nﾻ High-fidelity Excel rendering and printing"
-			+"\nﾻ Create new PDF documents using the product API"
-			+"\nﾻ Transform an XML document into PDF format"
-			+"\nﾻ Convert an Image file into PDF format"
-			+"\nﾻ Create new slides or clone existing slides from templates"
-			+"\nﾻ Add, remove, replace or extract text from PDF files"
-			+"\nﾻ Add, remove, replace or extract images from PDF files"
-			+"\nﾻ Convert a PDF file to an image"
-			+"\nﾻ Generate barcode images and save to stream or image file"
-			+"\nﾻ Project management, such as project planning, definition and tracking"
-			+"\nﾻ Recognize barcodes from stream or image file"
-			+"\nﾻ Create, load and manipulate Microsoft Visio drawings within Java application";
+	public static final String ASPOSE_ALL_COMPONENTS_TEXT = "» Generate reports using mail merge"
+			+"\n» Excel Reporting - Build dynamic Excel reports on the fly"
+			+"\n» Create Excel dashboards, incorporating charts and pivot tables"
+			+"\n» High-fidelity Excel rendering and printing"
+			+"\n» Create new PDF documents using the product API"
+			+"\n» Transform an XML document into PDF format"
+			+"\n» Convert an Image file into PDF format"
+			+"\n» Create new slides or clone existing slides from templates"
+			+"\n» Add, remove, replace or extract text from PDF files"
+			+"\n» Add, remove, replace or extract images from PDF files"
+			+"\n» Convert a PDF file to an image"
+			+"\n» Generate barcode images and save to stream or image file"
+			+"\n» Project management, such as project planning, definition and tracking"
+			+"\n» Recognize barcodes from stream or image file"
+			+"\n» Create, load and manipulate Microsoft Visio drawings within Java application";
 
 	public static final String ASPOSE_CELLS_FEATURE_TEXT = 
-			"Aspose.Cells for Java is an Excelﾮ " +
+			"Aspose.Cells for Java is an Excel® " +
 			"\nspreadsheet reporting component that" +
 			"\n enables Java applications to create " +
-			"\nand manage Excelﾮ spreadsheets without" +
-			"\n using Microsoft Excelﾮ. Aspose.Cells " +
+			"\nand manage Excel® spreadsheets without" +
+			"\n using Microsoft Excel®. Aspose.Cells " +
 			"\nfor Java is an incredibly feature rich " +
 			"\ncomponent that offers much more than " +
 			"\njust basic data export functions.";
@@ -148,9 +148,9 @@ public class AsposeConstants {
 	public static final String ASPOSE_TASKS_FEATURE_TEXT = 
 			"Aspose.Tasks for Java is a project management " +
 			"\nAPI that enables Java application developers " +
-			"\nto provide Microsoft Projectﾮ document manipulation" +
-			"\n capability in their applications ﾖ all without " +
-			"\nusing Microsoft Projectﾮ. With this powerful API, "+
+			"\nto provide Microsoft Project® document manipulation" +
+			"\n capability in their applications - all without " +
+			"\nusing Microsoft Project®. With this powerful API, "+
 			"\ndevelopers can control various stages of project" +
 			"\n management, such as project planning, definition"+
 			"\n and tracking.";	
