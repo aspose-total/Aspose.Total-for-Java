@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Aspose Ecplugin
+Bundle-Name: Aspose Project Wizard
 Bundle-SymbolicName: com.aspose.ecplugin;singleton:=true
-Bundle-Version: 1.1
+Bundle-Version: 1.2
 Bundle-Activator: com.aspose.ecplugin.Activator
-Bundle-Vendor: ASPOSE
+Bundle-Vendor: Aspose
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,
  org.eclipse.ui.ide;bundle-version="1.0.0",

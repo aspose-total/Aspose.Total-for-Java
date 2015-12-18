@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-   <description name="AsposeWizardUpdateSite" url="http://apps.aspose.com/marketplace/eclipse/asposewizardrepo">
+   <description name="Aspose.Total Project Wizard - Eclipse Update Site" url="http://cdn.aspose.com/marketplace/eclipse/asposewizardrepo/">
       &quot;New Aspose project&quot; which creates a new Eclipse project by downloading and referencing libraries of Aspose Java APIs. The Aspose project wizard allow user to select products from Aspose Java product lines like Aspose.Words Once specific product is selected its reference is automatically downloaded Downloaded APIs are automatically referenced in classpath of the project. If there is newer version available, User is notified while creating project and release notes are displayed
    </description>
-   <feature url="features/com.aspose.ecplugin.newproject.feature_1.1.0.jar" id="com.aspose.ecplugin.newproject.feature" version="1.1.0">
-      <category name="com.aspose.ecplugin.category.updatesite"/>
+   <feature url="features/com.aspose.ecplugin.newproject.feature_1.2.0.jar" id="com.aspose.ecplugin.newproject.feature" version="1.2">
+      <category name="Aspose_Project_Wizard_Update_Site"/>
    </feature>
-   <category-def name="com.aspose.ecplugin.category.updatesite" label="Aspose Wizard"/>
+   <category-def name="Aspose_Project_Wizard_Update_Site" label="Aspose Project Wizard Update Site">
+      <description>
+         http://www.aspose.com
+      </description>
+   </category-def>
 </site>

@@ -17,6 +17,8 @@ public class AsposeJavaComponent {
 	private boolean _latestRelease;
 	private String _changeLog;
 	private String _remoteExamplesRepository;
+	private String _productUrl;
+	
 	public AsposeJavaComponent()
 	{
 		_selected = false;
@@ -92,6 +94,20 @@ public class AsposeJavaComponent {
 	 */
 	public void set_downloadUrl(String _downloadUrl) {
 		this._downloadUrl = _downloadUrl;
+	}
+
+	/**
+	 * @return the _productUrl
+	 */
+	public String get_productUrl() {
+		return _productUrl;
+	}
+
+	/**
+	 * @param _productUrl the _productUrl to set
+	 */
+	public void set_productUrl(String _productUrl) {
+		this._productUrl = _productUrl;
 	}
 
 	/**
