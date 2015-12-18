@@ -5,11 +5,11 @@
 <xsl:for-each select="site">
 	<html>
 	<head>
-	<title>com.aspose.ecplugin.updatesite</title>
+	<title>Aspose Project Wizard - Eclipse Update Site</title>
 	<style>@import url("web/site.css");</style>
 	</head>
 	<body>
-	<h1 class="title">com.aspose.ecplugin.updatesite</h1>
+	<h1 class="title">Aspose Project Wizard - Eclipse Update Site</h1>
 	<p class="bodyText"><xsl:value-of select="description"/></p>
 	<table width="100%" border="0" cellspacing="1" cellpadding="2">
 	<xsl:for-each select="category-def">

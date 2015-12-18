@@ -92,7 +92,7 @@ public class AsposeComponentsManager {
 					if(component.is_selected())
 					{
 					try {	
-						ProductRelease productRelease = getProductReleaseInfo(component.get_downloadUrl());
+						ProductRelease productRelease = getProductReleaseInfo(component.get_productUrl());
 						component.set_downloadUrl(productRelease.getDownloadLink());
 						component.set_downloadFileName(productRelease.getFileName());
 						component.set_changeLog(productRelease.getChangeLog());
@@ -412,7 +412,7 @@ public class AsposeComponentsManager {
 	public static boolean isIneternetConnected()
 	{
 		try {
-			InetAddress address = InetAddress.getByName(AsposeConstants.INTERNTE_CONNNECTIVITY_PING_URL);
+			InetAddress address = InetAddress.getByName(AsposeConstants.INTERNET_CONNECTIVITY_PING_URL);
 			if(address == null)
 			{
 				return false;

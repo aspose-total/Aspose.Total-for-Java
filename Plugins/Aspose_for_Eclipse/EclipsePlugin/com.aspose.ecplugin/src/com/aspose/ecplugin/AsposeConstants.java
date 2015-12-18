@@ -24,6 +24,30 @@ public class AsposeConstants {
 	public static final String ASPOSE_DIAGRAM = "Aspose.Diagram";
 	public static final String ASPOSE_TASKS = "Aspose.Tasks";
 
+    //Library download URLS
+    public static final String GIT_URL_WORDS    = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.words.aspx";
+    public static final String GIT_URL_CELLS    = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.cells.aspx";
+    public static final String GIT_URL_PDF      = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.pdf.aspx";
+    public static final String GIT_URL_SLIDES   = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.slides.aspx";
+    public static final String GIT_URL_EMAIL    = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.email.aspx";
+    public static final String GIT_URL_BARCODE  = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.barcode.aspx";
+    public static final String GIT_URL_IMAGING  = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.imaging.aspx";
+    public static final String GIT_URL_TASKS    = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.tasks.aspx";
+    public static final String GIT_URL_OCR      = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.ocr.aspx";
+    public static final String GIT_URL_DIAGRAM  = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.diagram.aspx";
+
+    // Examples download URLS
+    public static final String GIT_EX_URL_WORDS    = "git://github.com/asposemarketplace/Aspose-Words-Java.git";
+    public static final String GIT_EX_URL_CELLS    = "git://github.com/asposemarketplace/Aspose-Cells-Java.git";
+    public static final String GIT_EX_URL_PDF      = "git://github.com/asposemarketplace/Aspose-Pdf-Java.git";
+    public static final String GIT_EX_URL_SLIDES   = "git://github.com/asposemarketplace/Aspose-Slides-Java.git";
+    public static final String GIT_EX_URL_EMAIL    = "git://github.com/asposemarketplace/Aspose-Email-Java.git";
+    public static final String GIT_EX_URL_BARCODE  = "git://github.com/asposemarketplace/Aspose-BarCode-Java.git";
+    public static final String GIT_EX_URL_IMAGING  = "git://github.com/asposemarketplace/Aspose-Imaging-Java.git";
+    public static final String GIT_EX_URL_TASKS    = "git://github.com/asposemarketplace/Aspose-Tasks-Java.git";
+    public static final String GIT_EX_URL_OCR      = "git://github.com/asposemarketplace/Aspose-OCR-Java.git";
+    public static final String GIT_EX_URL_DIAGRAM  = "git://github.com/asposemarketplace/Aspose-Diagram-Java.git";
+
 	//public static final String WEBSERVICE_ENDPOINT = "http://community.aspose.com/community/SecureServices/AsposeDownloads.asmx";
 
 	//Project 
@@ -35,7 +59,7 @@ public class AsposeConstants {
 	public static final String LIB_FOLDER = "lib";
 	public static final String BIN_FOLDER = "bin";
 	public static final String ASPOSE_JAVA_COMP_LINK_OPN_CMD = "cmd /c start http://www.aspose.com/java/total-component.aspx";
-	public static final String INTERNTE_CONNNECTIVITY_PING_URL = "java.sun.com";
+	public static final String INTERNET_CONNECTIVITY_PING_URL = "community.aspose.com";
 
 	//Messages UI text
 	public static final String FIRST_PAGE_NAME = "Aspose Project Wizard";
@@ -53,28 +77,28 @@ public class AsposeConstants {
 	public static final String EXAMPLES_DOWNLOAD_REQUIRED = "Example needs to be downloaded, continue to download?";
 	public static final String EXAMPLES_INTERNET_CONNECTION_REQUIRED_MESSAGE ="Internet connectivity is required to download examples";
 	//advertise
-	public static final String ASPOSE_ALL_COMPONENTS_TEXT = "» Generate reports using mail merge"
-			+"\n» Excel Reporting - Build dynamic Excel reports on the fly"
-			+"\n» Create Excel dashboards, incorporating charts and pivot tables"
-			+"\n» High-fidelity Excel rendering and printing"
-			+"\n» Create new PDF documents using the product API"
-			+"\n» Transform an XML document into PDF format"
-			+"\n» Convert an Image file into PDF format"
-			+"\n» Create new slides or clone existing slides from templates"
-			+"\n» Add, remove, replace or extract text from PDF files"
-			+"\n» Add, remove, replace or extract images from PDF files"
-			+"\n» Convert a PDF file to an image"
-			+"\n» Generate barcode images and save to stream or image file"
-			+"\n» Project management, such as project planning, definition and tracking"
-			+"\n» Recognize barcodes from stream or image file"
-			+"\n» Create, load and manipulate Microsoft Visio drawings within Java application";
+	public static final String ASPOSE_ALL_COMPONENTS_TEXT = "Â» Generate reports using mail merge"
+			+"\nÂ» Excel Reporting - Build dynamic Excel reports on the fly"
+			+"\nÂ» Create Excel dashboards, incorporating charts and pivot tables"
+			+"\nÂ» High-fidelity Excel rendering and printing"
+			+"\nÂ» Create new PDF documents using the product API"
+			+"\nÂ» Transform an XML document into PDF format"
+			+"\nÂ» Convert an Image file into PDF format"
+			+"\nÂ» Create new slides or clone existing slides from templates"
+			+"\nÂ» Add, remove, replace or extract text from PDF files"
+			+"\nÂ» Add, remove, replace or extract images from PDF files"
+			+"\nÂ» Convert a PDF file to an image"
+			+"\nÂ» Generate barcode images and save to stream or image file"
+			+"\nÂ» Project management, such as project planning, definition and tracking"
+			+"\nÂ» Recognize barcodes from stream or image file"
+			+"\nÂ» Create, load and manipulate Microsoft Visio drawings within Java application";
 
 	public static final String ASPOSE_CELLS_FEATURE_TEXT = 
-			"Aspose.Cells for Java is an Excel® " +
+			"Aspose.Cells for Java is an ExcelÂ® " +
 			"\nspreadsheet reporting component that" +
 			"\n enables Java applications to create " +
-			"\nand manage Excel® spreadsheets without" +
-			"\n using Microsoft Excel®. Aspose.Cells " +
+			"\nand manage ExcelÂ® spreadsheets without" +
+			"\n using Microsoft ExcelÂ®. Aspose.Cells " +
 			"\nfor Java is an incredibly feature rich " +
 			"\ncomponent that offers much more than " +
 			"\njust basic data export functions.";
@@ -124,9 +148,9 @@ public class AsposeConstants {
 	public static final String ASPOSE_TASKS_FEATURE_TEXT = 
 			"Aspose.Tasks for Java is a project management " +
 			"\nAPI that enables Java application developers " +
-			"\nto provide Microsoft Project® document manipulation" +
-			"\n capability in their applications – all without " +
-			"\nusing Microsoft Project®. With this powerful API, "+
+			"\nto provide Microsoft ProjectÂ® document manipulation" +
+			"\n capability in their applications - all without " +
+			"\nusing Microsoft ProjectÂ®. With this powerful API, "+
 			"\ndevelopers can control various stages of project" +
 			"\n management, such as project planning, definition"+
 			"\n and tracking.";	
@@ -160,11 +184,12 @@ public class AsposeConstants {
 			"\nMicrosoft Visio. It provides better performance and "
 			+"\nis easier to use to manipulate diagrams and convert " +
 			"\nfiles than Microsoft Office Automation.";	
-	private static final boolean printing_allowed = true; 
+	
+	private static final boolean PRINTING_ALLOWED = true; 
 	
 	public static final void println(String message)
     {
-        if(printing_allowed)
+        if(PRINTING_ALLOWED)
         {
             System.out.println(message);
         }
