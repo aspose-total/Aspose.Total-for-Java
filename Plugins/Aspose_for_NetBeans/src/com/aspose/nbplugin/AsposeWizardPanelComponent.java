@@ -156,6 +156,7 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_TASKS, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeTasks().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_OCR, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeOCR().isSelected());
         ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_DIAGRAM, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeDiagram().isSelected());
+        ((WizardDescriptor) settings).putProperty(AsposeConstants.ASPOSE_NOTE, ((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeDiagram().isSelected());
     }
 
     //=========================================================================
@@ -232,7 +233,10 @@ public class AsposeWizardPanelComponent implements WizardDescriptor.Panel, Wizar
         {
             AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_DIAGRAM).set_selected(true);
         }
-
+        if (((AsposePanelVisualComponent) getComponent()).getjCheckBoxAsposeNote().isSelected())
+        {
+            AsposeJavaComponents.list.get(AsposeConstants.ASPOSE_NOTE).set_selected(true);
+        }
     }
 
     //=========================================================================
