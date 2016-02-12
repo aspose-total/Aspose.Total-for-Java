@@ -23,6 +23,7 @@ public class AsposeConstants {
     public static final String ASPOSE_IMAGING = "Aspose.Imaging";
     public static final String ASPOSE_TASKS = "Aspose.Tasks";
     public static final String ASPOSE_DIAGRAM = "Aspose.Diagram";
+    public static final String ASPOSE_NOTE = "Aspose.Note";
 
     // Added by adeel.ilyas@aspose.com - Integration of Apache POI Examples / Other FrameWork Examples
     // Apache POI Comparison Examples
@@ -46,6 +47,7 @@ public class AsposeConstants {
     public static final String GIT_URL_TASKS    = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.tasks.aspx";
     public static final String GIT_URL_OCR      = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.ocr.aspx";
     public static final String GIT_URL_DIAGRAM  = "http://community.aspose.com/community/secureservices/asposedownloads/java/aspose.diagram.aspx";
+    public static final String GIT_URL_NOTE     = "http://www.aspose.com/community/secureservices/asposedownloads/java/aspose.note.aspx";
 
     // Examples download URLS
     public static final String GIT_EX_URL_WORDS    = "https://github.com/asposemarketplace/Aspose-Words-Java.git";
@@ -211,10 +213,18 @@ public class AsposeConstants {
             + "<br/>and is easier to use to manipulate diagrams and"
             + "<br/>convert files than Microsoft Office Automation.</html>";
 
-    private static final boolean printing_allowed = false;
+    public static final String ASPOSE_NOTE_FEATURE_TEXT
+            = "<html>Aspose.Note is a class library that enables"
+            + "<br/>applications to interact with Microsoft Office OneNote"
+            + "<br/>programmatically without it being installed on the server."
+            + "<br/>It is a pure alternate for the Microsoft OneNote"
+            + "<br/>Object Model and provides better performance and"
+            + "<br/>ease of use for managing OneNote documents.</html>";
+    
+    private static final boolean PRINTING_ALLOWED = false;
 
     public static final void println(String message) {
-        if (printing_allowed) {
+        if (PRINTING_ALLOWED) {
             System.out.println(message);
         }
     }

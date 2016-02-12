@@ -53,6 +53,7 @@ public class AsposePanelVisualComponent extends JPanel
         jCheckBoxAsposeImaging = new javax.swing.JCheckBox();
         jCheckBoxAsposeTasks = new javax.swing.JCheckBox();
         jCheckBoxAsposeDiagram = new javax.swing.JCheckBox();
+        jCheckBoxAsposeNote = new javax.swing.JCheckBox();
         jPanel4 = new javax.swing.JPanel();
         jLabelCommonUses = new javax.swing.JLabel();
         jLabelMessage = new javax.swing.JLabel();
@@ -68,7 +69,9 @@ public class AsposePanelVisualComponent extends JPanel
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel5)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel5))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -85,7 +88,7 @@ public class AsposePanelVisualComponent extends JPanel
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 285, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jPanel6.border.title"))); // NOI18N
@@ -167,6 +170,14 @@ public class AsposePanelVisualComponent extends JPanel
             }
         });
 
+        org.openide.awt.Mnemonics.setLocalizedText(jCheckBoxAsposeNote, org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jCheckBoxAsposeNote.text")); // NOI18N
+        jCheckBoxAsposeNote.setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        jCheckBoxAsposeNote.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxAsposeNoteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
@@ -184,40 +195,44 @@ public class AsposePanelVisualComponent extends JPanel
                     .addComponent(jCheckBoxAsposeOCR)
                     .addComponent(jCheckBoxAsposeImaging)
                     .addComponent(jCheckBoxAsposeTasks)
-                    .addComponent(jCheckBoxAsposeDiagram))
-                .addContainerGap(8, Short.MAX_VALUE))
+                    .addComponent(jCheckBoxAsposeDiagram)
+                    .addComponent(jCheckBoxAsposeNote))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jCheckBoxSelectAll)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeCells)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeWords)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposePdf)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeSlides)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeBarCode)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeEmail)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeOCR)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeImaging)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeTasks)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jCheckBoxAsposeDiagram)
-                .addContainerGap(12, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBoxAsposeNote)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jPanel4.border.title"))); // NOI18N
         jPanel4.setPreferredSize(new java.awt.Dimension(333, 285));
 
+        jLabelCommonUses.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(jLabelCommonUses, org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jLabelCommonUses.text")); // NOI18N
         jLabelCommonUses.setToolTipText(org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jLabelCommonUses.toolTipText")); // NOI18N
 
@@ -225,9 +240,7 @@ public class AsposePanelVisualComponent extends JPanel
         jPanel4.setLayout(jPanel4Layout);
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(jLabelCommonUses, javax.swing.GroupLayout.PREFERRED_SIZE, 347, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 5, Short.MAX_VALUE))
+            .addComponent(jLabelCommonUses, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -236,6 +249,7 @@ public class AsposePanelVisualComponent extends JPanel
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabelMessage.setFont(new java.awt.Font("Lucida Grande", 0, 12)); // NOI18N
         org.openide.awt.Mnemonics.setLocalizedText(jLabelMessage, org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jLabelMessage.text")); // NOI18N
         jLabelMessage.setToolTipText(org.openide.util.NbBundle.getMessage(AsposePanelVisualComponent.class, "AsposePanelVisualComponent.jLabelMessage.toolTipText")); // NOI18N
 
@@ -243,15 +257,17 @@ public class AsposePanelVisualComponent extends JPanel
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabelMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabelMessage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 364, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(5, 5, 5)
                 .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -259,14 +275,13 @@ public class AsposePanelVisualComponent extends JPanel
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 415, Short.MAX_VALUE)))
+                    .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, 378, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabelMessage, javax.swing.GroupLayout.DEFAULT_SIZE, 17, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(jLabelMessage, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -316,12 +331,18 @@ public class AsposePanelVisualComponent extends JPanel
         validateDialog();       // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBoxAsposeDiagramActionPerformed
 
+    private void jCheckBoxAsposeNoteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxAsposeNoteActionPerformed
+        // TODO add your handling code here:
+        validateDialog();
+    }//GEN-LAST:event_jCheckBoxAsposeNoteActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox jCheckBoxAsposeBarCode;
     private javax.swing.JCheckBox jCheckBoxAsposeCells;
     private javax.swing.JCheckBox jCheckBoxAsposeDiagram;
     private javax.swing.JCheckBox jCheckBoxAsposeEmail;
     private javax.swing.JCheckBox jCheckBoxAsposeImaging;
+    private javax.swing.JCheckBox jCheckBoxAsposeNote;
     private javax.swing.JCheckBox jCheckBoxAsposeOCR;
     private javax.swing.JCheckBox jCheckBoxAsposePdf;
     private javax.swing.JCheckBox jCheckBoxAsposeSlides;
@@ -373,47 +394,21 @@ public class AsposePanelVisualComponent extends JPanel
     //=========================================================================
     private boolean isComponentSelected()
     {
-        if (getjCheckBoxAsposeCells().isSelected())
+        if (getjCheckBoxAsposeWords().isSelected() ||
+                getjCheckBoxAsposeCells().isSelected() ||
+                getjCheckBoxAsposePdf().isSelected() ||
+                getjCheckBoxAsposeSlides().isSelected() ||
+                getjCheckBoxAsposeEmail().isSelected() ||
+                getjCheckBoxAsposeBarCode().isSelected() ||
+                getjCheckBoxAsposeImaging().isSelected() ||
+                getjCheckBoxAsposeTasks().isSelected() ||
+                getjCheckBoxAsposeOCR().isSelected() ||
+                getjCheckBoxAsposeDiagram().isSelected() ||
+                getjCheckBoxAsposeNote().isSelected()
+                )
         {
             return true;
         }
-        if (getjCheckBoxAsposeWords().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposePdf().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeSlides().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeBarCode().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeEmail().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeOCR().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeImaging().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeTasks().isSelected())
-        {
-            return true;
-        }
-        if (getjCheckBoxAsposeDiagram().isSelected())
-        {
-            return true;
-        }
-
         return false;
     }
     //=========================================================================
@@ -450,6 +445,7 @@ public class AsposePanelVisualComponent extends JPanel
         getjCheckBoxAsposeWords().setSelected(value);
         getjCheckBoxAsposeTasks().setSelected(value);
         getjCheckBoxAsposeDiagram().setSelected(value);
+        getjCheckBoxAsposeNote().setSelected(value);
     }
     //=========================================================================
     void updateComponentsSelectionList()
@@ -520,6 +516,12 @@ public class AsposePanelVisualComponent extends JPanel
         {
             AsposeJavaComponent component = AsposeJavaComponents.list
                 .get(AsposeConstants.ASPOSE_DIAGRAM);
+            component.set_selected(true);
+        }
+        if (getjCheckBoxAsposeNote().isSelected())
+        {
+            AsposeJavaComponent component = AsposeJavaComponents.list
+                .get(AsposeConstants.ASPOSE_NOTE);
             component.set_selected(true);
         }
 
@@ -601,5 +603,11 @@ public class AsposePanelVisualComponent extends JPanel
     public javax.swing.JCheckBox getjCheckBoxAsposeDiagram()
     {
         return jCheckBoxAsposeDiagram;
+    }
+    /**
+     * @return the jCheckBoxAsposeNote
+     */
+    public javax.swing.JCheckBox getjCheckBoxAsposeNote() {
+        return jCheckBoxAsposeNote;
     }
 }

@@ -120,6 +120,14 @@ public class AsposeJavaComponents {
             asposeDiagram.set_remoteExamplesRepository(AsposeConstants.GIT_EX_URL_DIAGRAM);
             list.put(AsposeConstants.ASPOSE_DIAGRAM, asposeDiagram);
 
+            //ASPOSE_NOTE
+            AsposeJavaComponent asposeNote = new AsposeJavaComponent();
+            asposeNote.set_downloadUrl(AsposeConstants.GIT_URL_NOTE);
+            asposeNote.get_downloadFileName();
+            asposeNote.set_name(AsposeConstants.ASPOSE_NOTE);
+            
+            list.put(AsposeConstants.ASPOSE_NOTE, asposeNote);
+            
             //compInitialized = true;
         }
     }
