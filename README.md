@@ -12,7 +12,7 @@ This repository contains [Examples](Examples), [Plugins](Plugins) and Showcases 
 
 Directory | Description
 --------- | -----------
-[Examples](Examples)  | A collection of Java examples that help you learn the product features
+[Examples](Examples)  | A collection of Java examples that help you learn and explore the API features
 [Plugins](Plugins)  | Plugins that will demonstrate one or more features of Aspose.Total for Java
 
 ## Resources
