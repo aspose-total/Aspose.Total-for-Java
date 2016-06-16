@@ -1,7 +1,7 @@
 ##Aspose.Total for Java
 [Aspose.Total for Java](http://www.aspose.com/products/total/java) combines all file format APIs for Java as a single package that are offered by Aspose. It empowers developers to create, edit, render, print and convert between a wide range of popular document formats within any Java (J2SE, J2EE, J2ME) applications.
 
-This repository contains [Examples](Examples), [Plugins](Plugins) and Showcase projects for [Aspose.Total for Java](http://www.aspose.com/products/total/java) to help you learn and write your own applications.
+This repository contains [Examples](Examples), [Plugins](Plugins) and Showcases for [Aspose.Total for Java](http://www.aspose.com/products/total/java) to help you learn and write your own applications.
 
 <p align="center">
 
