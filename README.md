@@ -23,3 +23,4 @@ Directory | Description
 + **Documentation:** [Aspose.Total for Java Documentation](http://www.aspose.com/docs/display/totalnet/Home)
 + **Forum:** [Aspose.Total for Java Forum](http://www.aspose.com/community/forums/aspose.total-product-family/442/showforum.aspx)
 + **Blog:** [Aspose.Total for Java Blog](http://www.aspose.com/blogs/aspose-products/aspose-total-product-family.html)
++ **Search:** [Aspose.Total for Java Search](https://search.aspose.com/)
